@@ -1,0 +1,9 @@
+a. there are 7 commits, 2 by me and 5 by a previous author
+b. on Jan 24, 2017 by jmflorezff
+c. git log shows what commits have been made so far,
+   where as git status checks if there are any changes that need to be commited 
+d. an unstaged file is a file that hasnt been marked to be included in the next commit, 
+   where as an untracked file exists loccally but not in the Git Repository
+e. git reset reverts all of the changes back to a specific commit without touching the working tree
+   where as, git checkout prepares for a branch by changing the working tree and without touching the index.  
+f. the uncommited changes will be staged 
