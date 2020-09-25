@@ -6,8 +6,10 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide two or more integers to add");
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("the argument provided is empty, please input two or more integers");
+        }catch (NumberFormatException e) {
+            System.err.println("invalid argument! please input two or more integers");
         }
     }
 
