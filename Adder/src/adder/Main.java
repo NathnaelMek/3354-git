@@ -13,8 +13,21 @@ public class Main {
 
     private static int addArguments(String[] args) {
         int sum = 0;
-        for(int i = 0; i < args.length; i++)
-            sum += Integer.valueOf(args[i]);
+        try{
+            if(args[0] == "-"){
+                // throws NumberFormatException if condition is true
+            }else{
+                for(int i = 0; i < args.length; i++)
+                    sum += Integer.valueOf(args[i]);
+            }
+
+        }catch(NumberFormatException e){
+
+            for(int i = 1; i < args.length; i++)
+                sum += (Integer.valueOf(args[i]))*(-1);
+        }
+       
+
         return sum;
     }
 }
